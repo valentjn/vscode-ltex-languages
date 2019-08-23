@@ -4,14 +4,14 @@
     "version": "3.8.0",
     "description": "Enables grammar checking of ${Language} in LanguageTool for Visual Studio Code.",
     "icon": "img/png/LanguageTool-Icon-${short code}.png",
-    "author": "Adam Voss",
-    "publisher": "adamvoss",
+    "author": "Julian Valentin",
+    "publisher": "valentjn",
     "preview": true,
     "extensionDependencies": [
-        "adamvoss.vscode-languagetool"
+        "valentjn.vscode-languagetool"
     ],
     "repository": {
-        "url": "https://github.com/adamvoss/vscode-languagetool"
+        "url": "https://github.com/valentjn/vscode-languagetool"
     },
     "license": "Apache-2.0",
     "engines": {
