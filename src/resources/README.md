@@ -16,12 +16,12 @@ See [LanguageTool for Visual Studio Code](https://github.com/valentjn/vscode-lan
 
 ## Requirements
 * A compatible version of [LanguageTool for Visual Studio Code](https://github.com/valentjn/vscode-languagetool) must be installed.
-  * This package is based on LanguageTool 3.8, so you will need **at least version 3.8.0** of _LanguageTool for Visual Studio Code_.
+  * This package is based on LanguageTool 4.6, so you will need **at least version 4.6.0** of _LanguageTool for Visual Studio Code_.
 * Java 8+ is required.
 
 ## Versioning
 
-LanguageTool for Visual Studio code has adopted the versioning of its LanguageTool dependency.  For example, if this extension has version 3.8.0 it is powered by LanguageTool 3.8.  vscode-languagetool 3.9.0 would use LanguageTool 3.9.  **The LanguageTool version of this language support extension must match the LanguageTool version of your installed vscode-languagetool extension.**  The easiest way to ensure compatibility is to always update all LanguageTool-related extensions when updating.  We will never have incompatible versions published at the same time.
+LanguageTool for Visual Studio code has adopted the versioning of its LanguageTool dependency.  For example, if this extension has version 4.6.0 it is powered by LanguageTool 4.6.  vscode-languagetool 4.7.0 would use LanguageTool 4.7.  **The LanguageTool version of this language support extension must match the LanguageTool version of your installed vscode-languagetool extension.**  The easiest way to ensure compatibility is to always update all LanguageTool-related extensions when updating.  We will never have incompatible versions published at the same time.
 
 ## Acknowledgments
 Please see [ACKNOWLEDGMENTS.md](./ACKNOWLEDGMENTS.md)
