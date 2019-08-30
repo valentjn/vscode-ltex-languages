@@ -30,5 +30,17 @@
     ],
     "categories": [
         "Other"
-    ]
+    ],
+    "contributes": {
+        "configuration": {
+            "title": "LanguageTool for Visual Studio Code",
+            "properties": {
+                "languageTool.${short code}.dictionary": {
+                    "type": "array",
+                    "default": [],
+                    "description": "List of additional ${Language} (${short code}) words that should not be counted as spelling errors."
+                }
+            }
+        }
+    }
 }
