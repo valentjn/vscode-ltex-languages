@@ -30,7 +30,7 @@ describe('gradle_firstLevelDependencies', function () {
   it('should contain items matching expected pattern', async function () {
     const packages = await gradle.firstLevelDependencies()
     packages.forEach(function (element) {
-      assert.match(element, /^org.languagetool:language-(.*):3.\d+$/)
+      assert.match(element, /^org.languagetool:language-(.*):4.\d+$/)
     }, this);
     assert.isNotEmpty(packages)
     return;
