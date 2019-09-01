@@ -1,6 +1,6 @@
 # Language Support Packages for vscode-ltex
 
-![Travis CI build status](https://api.travis-ci.org/valentjn/vscode-ltex-languages.svg?branch=master)
+[![Travis CI build status](https://api.travis-ci.org/valentjn/vscode-ltex-languages.svg?branch=master)](https://www.travis-ci.org/valentjn/vscode-ltex-languages)
 [![GitHub](https://img.shields.io/badge/-fork%20me%20on%20GitHub-blue)](https://github.com/valentjn/vscode-ltex-languages)
 
 Code for generating Visual Studio Code extension packages for every LanguageTool Language. For use with the [LT<sub>E</sub>X Extension for Visual Studio Code](https://github.com/valentjn/vscode-ltex).
