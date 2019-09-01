@@ -23,4 +23,6 @@ Currently version information both of these packages and dependencies are stored
 
 # Requirements
 
-Node.js 8.0 or newer is required.
+* Node.js 8.0 or newer is required.
+* Java 8+ is required.
+* Inkscape and the Ubuntu font are required to convert the icons to PNG.
