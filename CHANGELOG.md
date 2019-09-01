@@ -1,5 +1,8 @@
 # Changelog
 
+## 4.6.1
+- Fix missing Ubuntu font dependency for Travis
+
 ## 4.6.0
 - Update to LanguageTool 4.6
 - Change URLs from abandoned repository

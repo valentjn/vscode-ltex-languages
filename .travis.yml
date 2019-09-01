@@ -4,6 +4,7 @@ sudo: false
 addons:
   apt:
     packages:
+    - fonts-ubuntu
     - inkscape
 jdk:
 - oraclejdk11
