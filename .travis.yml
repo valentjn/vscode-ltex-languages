@@ -1,13 +1,13 @@
 language: java
-dist: bionic
+dist: trusty
 sudo: false
 addons:
   apt:
     packages:
-    - fonts-ubuntu
+    - ttf-ubuntu-font-family
     - inkscape
 jdk:
-- oraclejdk11
+- oraclejdk8
 node_js:
 - '8'
 install:

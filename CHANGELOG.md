@@ -1,5 +1,8 @@
 # Changelog
 
+## 4.6.3
+- Fix deployed *.vsix needed Java 11, not 8
+
 ## 4.6.1
 - Fix missing Ubuntu font dependency for Travis
 - Link badge to Travis
