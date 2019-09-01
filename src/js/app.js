@@ -6,8 +6,6 @@ const outputDir = './staging/';
 const gradle = Gradle(outputDir)
 const fs = require('fs');
 
-const iconTemplate = "img/png/LanguageTool-Icon-${short code}.png";
-
 // https://stackoverflow.com/a/3561711/1072626
 RegExp.escape = function (s) {
     return s.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
@@ -35,6 +33,19 @@ async function getCoreFiles() {
     return readAllJars();
 }
 
+async function writeIcon(shortCode) {
+    const exec = util.promisify(require('child_process').exec);
+    const iconSvg = `${outputDir}/img/LTeX-${shortCode}-icon.svg`;
+    const iconPng = `${outputDir}/img/LTeX-${shortCode}-icon.png`;
+    const label = ((shortCode == 'de-DE-x-simple-language') ? 'S. DE' : shortCode.toUpperCase());
+    await exec(`mkdir -p ${outputDir}/img`);
+    await exec(`rm -f ${outputDir}/img/LTeX-*-icon.{svg,png}`);
+    await exec(`cp img/LTeX-language-icon.svg "${iconSvg}"`);
+    await exec(`sed -i 's/\${short code}/${label}/g' "${iconSvg}"`);
+    await exec('inkscape -z --export-area-page --export-width=128px --export-height=128px ' +
+            `"${iconSvg}" "--export-png=${iconPng}"`);
+}
+
 async function writeVscodeignore(coreFiles, shortCode) {
     const currentFiles = await util.promisify(fs.readdir)(`${outputDir}build/install/${outputDir}lib/`)
 
@@ -45,7 +56,7 @@ async function writeVscodeignore(coreFiles, shortCode) {
     const excludeEverything = "*\n" + "*/**\n"
 
     await util.promisify(fs.writeFile)(outputDir + '.vscodeignore',
-        ["*", "*/**", "!README.md", "!LICENSE.txt", "!ACKNOWLEDGMENTS.md", "!package.json", `!${templateReplace('short code', shortCode, iconTemplate)}`]
+        ["*", "*/**", "!README.md", "!LICENSE.txt", "!ACKNOWLEDGMENTS.md", "!package.json", `!img/LTeX-${shortCode}-icon.png`]
             .concat(filesToInclude.map(s => '!lib/' + s)).join('\n'))
 }
 
@@ -67,6 +78,7 @@ async function main() {
     for (const packageName of packages) {
         const shortCode = getLanguageShortCode(packageName)
         await writeGradleBuild(packageName)
+        await writeIcon(shortCode)
         await gradle.exec('installDist')
         await writeVscodeignore(coreFiles, shortCode)
         await gradle.exec('run')

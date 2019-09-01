@@ -1,6 +1,7 @@
 /node_modules/
 /staging/.gradle/
 /staging/build/
+/staging/img/
 /staging/lib/
 /staging/.vscodeignore
 /staging/build.gradle

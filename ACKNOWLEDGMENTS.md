@@ -8,19 +8,6 @@ In the event that we accidentally failed to list a required notice, please bring
 
 The attached notices are provided for information only.
 
-## LanguageTool logo
-
-The LanguageTool logo is [used with permission](http://forum.languagetool.org/t/language-specific-languagetool-logos/1768/2?u=vossad01).  [Credits](https://github.com/languagetool-org/languagetool-website/blob/master/logo-sources/README.txt):
-
-```
-Original Logo by Luis Tescaroli, September 2012
-Changes by Nathan Wells
-
-Fonts used:
-Museo for the "LT" in the icon - see http://www.myfonts.com/fonts/exljbris/museo/ for download and License
-Avenir LT Std for "LanguageTool"
-```
-
 ## License Notice for LanguageTool
 
 [LanguageTool](https://github.com/languagetool-org/languagetool) is licensed under the LGPL 2.1 or later.
