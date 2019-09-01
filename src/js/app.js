@@ -77,7 +77,7 @@ async function main() {
         await exec(`rm -Rf ${outputDir}lib`)
         await exec(`cp -R ${outputDir}build/install/${outputDir}lib ${outputDir}`)
 
-        await createVSIX({ cwd: outputDir, packagePath: `vscode-languagetool-${shortCode}-${version}.vsix` })
+        await createVSIX({ cwd: outputDir, packagePath: `vscode-ltex-${shortCode}-${version}.vsix` })
     }
 }
 

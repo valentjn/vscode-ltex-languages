@@ -1,17 +1,14 @@
 {
-    "name": "vscode-languagetool-${short code}",
-    "displayName": "${Language} Support for LanguageTool",
+    "name": "vscode-ltex-${short code}",
+    "displayName": "${Language} support for LTeX",
     "version": "4.6.0",
-    "description": "Enables grammar checking of ${Language} in LanguageTool for Visual Studio Code.",
+    "description": "Enables grammar checking of ${Language} with the LTeX extension",
     "icon": "img/png/LanguageTool-Icon-${short code}.png",
     "author": "Julian Valentin",
     "publisher": "valentjn",
     "preview": true,
-    "extensionDependencies": [
-        "valentjn.vscode-languagetool"
-    ],
     "repository": {
-        "url": "https://github.com/valentjn/vscode-languagetool"
+        "url": "https://github.com/valentjn/vscode-ltex"
     },
     "license": "Apache-2.0",
     "engines": {
@@ -26,6 +23,7 @@
         "grammar",
         "proofread",
         "grammar-checker",
+        "latex",
         "${Language}"
     ],
     "categories": [
@@ -33,9 +31,9 @@
     ],
     "contributes": {
         "configuration": {
-            "title": "LanguageTool for Visual Studio Code",
+            "title": "LTeX",
             "properties": {
-                "languageTool.${short code}.dictionary": {
+                "ltex.${short code}.dictionary": {
                     "type": "array",
                     "default": [],
                     "description": "List of additional ${Language} (${short code}) words that should not be counted as spelling errors."

@@ -1,8 +1,10 @@
 # Acknowledgments
 
+The code was originally written by [Adam Voss](https://github.com/adamvoss/vscode-languagetool-languages).
+
 These packages distribute third-party libraries or other resources that may be distributed under licenses different than itself.
 
-In the event that we accidentally failed to list a required notice, please bring it to our attention by opening an Issue or Pull Request.
+In the event that we accidentally failed to list a required notice, please bring it to our attention by opening an issue or pull request.
 
 The attached notices are provided for information only.
 
@@ -19,7 +21,7 @@ Museo for the "LT" in the icon - see http://www.myfonts.com/fonts/exljbris/museo
 Avenir LT Std for "LanguageTool"
 ```
 
-## License notice for LanguageTool
+## License Notice for LanguageTool
 
 [LanguageTool](https://github.com/languagetool-org/languagetool) is licensed under the LGPL 2.1 or later.
 

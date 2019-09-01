@@ -1,7 +1,7 @@
 {
-  "name": "vscode-languagetool-languagepackage-generator",
+  "name": "vscode-ltex-languagepackage-generator",
   "version": "4.6.0",
-  "description": "Script to generate language-specific packages for vscode-languagetool",
+  "description": "Script to generate language-specific packages for vscode-ltex",
   "main": "src/js/app.js",
   "scripts": {
     "test": "mocha -t 16000 test/js/",
