@@ -1,5 +1,8 @@
 # Changelog
 
+## 4.6.6 (upcoming)
+- Mention specific language setting in README.md
+
 ## 4.6.5
 - Make README.md and package.json consistent with vscode-ltex
 

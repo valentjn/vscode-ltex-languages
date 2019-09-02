@@ -12,6 +12,8 @@ This extension makes the following values valid for the `ltex.language` setting:
 
 * ${all variants as markdown}
 
+Use a specific variant like `en-US` or `de-DE` instead of the generic language code like `en` or `de` to obtain spelling corrections (in addition to grammar corrections).
+
 User dictionaries can be created via `ltex.<LANGUAGE>.dictionary`, where `<LANGUAGE>` is one of the language short codes listed above.
 
 ## Features
