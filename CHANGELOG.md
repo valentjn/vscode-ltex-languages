@@ -1,5 +1,8 @@
 # Changelog
 
+## 4.6.5 (upcoming)
+- Make README.md and package.json consistent with vscode-ltex
+
 ## 4.6.3
 - Fix deployed *.vsix needed Java 11, not 8
 

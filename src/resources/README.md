@@ -26,7 +26,7 @@ See [LT<sub>E</sub>X Extension for Visual Studio Code][ltex-ext].
 
 ## Versioning
 
-The LT<sub>E</sub>X extension has adopted the versioning of its LanguageTool dependency. For example, if this extension has version 4.6.0 it is powered by LanguageTool 4.6. vscode-ltex 4.7.0 would use LanguageTool 4.7. **The LanguageTool version of this language support extension must match the LanguageTool version of your installed vscode-ltex extension.** The easiest way to ensure compatibility is to always update all LT<sub>E</sub>X-related extensions when updating. We will never have incompatible versions published at the same time.
+The LT<sub>E</sub>X extension has adopted the versioning of its LanguageTool dependency. For example, if this extension has version 4.6.0 it is powered by LanguageTool 4.6. vscode-ltex 4.6.1 would also use LanguageTool 4.6. vscode-ltex 4.7.0 would use LanguageTool 4.7. **The LanguageTool version of this language support extension must match the LanguageTool version of your installed vscode-ltex extension.** The easiest way to ensure compatibility is to always update all LT<sub>E</sub>X-related extensions when updating. We will never have incompatible versions published at the same time.
 
 ## Known Issues
 

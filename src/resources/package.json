@@ -1,44 +1,46 @@
 {
-    "name": "vscode-ltex-${short code}",
-    "displayName": "${Language} support for LTeX",
-    "version": "4.6.3",
-    "description": "Enables grammar checking of ${Language} with the LTeX extension",
-    "icon": "img/LTeX-${short code}-icon.png",
-    "author": "Julian Valentin",
-    "publisher": "valentjn",
-    "preview": true,
-    "repository": {
-        "url": "https://github.com/valentjn/vscode-ltex"
-    },
-    "license": "Apache-2.0",
-    "engines": {
-        "vscode": "^1.8.0"
-    },
-    "galleryBanner": {
-        "color": "#6565f6",
-        "theme": "light"
-    },
-    "keywords": [
-        "spell",
-        "grammar",
-        "proofread",
-        "grammar-checker",
-        "latex",
-        "${Language}"
-    ],
-    "categories": [
-        "Other"
-    ],
-    "contributes": {
-        "configuration": {
-            "title": "LTeX",
-            "properties": {
-                "ltex.${short code}.dictionary": {
-                    "type": "array",
-                    "default": [],
-                    "description": "List of additional ${Language} (${short code}) words that should not be counted as spelling errors."
-                }
-            }
+  "name": "vscode-ltex-${short code}",
+  "displayName": "${Language} support for LTeX",
+  "version": "4.6.3",
+  "preview": true,
+  "description": "Enables grammar checking of ${Language} with the LTeX extension",
+  "icon": "img/LTeX-${short code}-icon.png",
+  "author": "Julian Valentin",
+  "publisher": "valentjn",
+  "license": "Apache-2.0",
+  "repository": {
+    "url": "https://github.com/valentjn/vscode-ltex"
+  },
+  "engines": {
+    "vscode": "^1.37.0"
+  },
+  "galleryBanner": {
+    "color": "#6565f6",
+    "theme": "dark"
+  },
+  "keywords": [
+    "spell",
+    "grammar",
+    "proofread",
+    "checker",
+    "grammar-checker",
+    "latex",
+    "${Language}"
+  ],
+  "categories": [
+    "Linters",
+    "Other"
+  ],
+  "contributes": {
+    "configuration": {
+      "title": "LTeX",
+      "properties": {
+        "ltex.${short code}.dictionary": {
+          "type": "array",
+          "default": [],
+          "description": "List of additional ${Language} (${short code}) words that should not be counted as spelling errors."
         }
+      }
     }
+  }
 }
