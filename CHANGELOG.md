@@ -1,6 +1,6 @@
 # Changelog
 
-## 4.6.5 (upcoming)
+## 4.6.5
 - Make README.md and package.json consistent with vscode-ltex
 
 ## 4.6.3
