@@ -1,6 +1,6 @@
 # Changelog
 
-## 4.6.6 (upcoming)
+## 4.6.6
 - Mention specific language setting in README.md
 
 ## 4.6.5

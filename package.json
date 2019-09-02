@@ -1,6 +1,6 @@
 {
   "name": "vscode-ltex-languagepackage-generator",
-  "version": "4.6.5",
+  "version": "4.6.6",
   "description": "Script to generate language-specific packages for vscode-ltex",
   "main": "src/js/app.js",
   "scripts": {
