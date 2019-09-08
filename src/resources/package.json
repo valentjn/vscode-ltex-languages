@@ -36,7 +36,8 @@
         "ltex.${short code}.dictionary": {
           "type": "array",
           "default": [],
-          "description": "List of additional ${Language} (${short code}) words that should not be counted as spelling errors."
+          "markdownDescription": "List of additional ${Language} (language short code `${short code}`) words that should not be counted as spelling errors.",
+          "description": "List of additional ${Language} (language short code \"${short code}\") words that should not be counted as spelling errors."
         }
       }
     }
