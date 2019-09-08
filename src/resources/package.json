@@ -1,7 +1,7 @@
 {
   "name": "vscode-ltex-${short code}",
   "displayName": "${Language} support for LTeX",
-  "version": "4.6.6",
+  "version": "4.6.9",
   "preview": true,
   "description": "Enables grammar checking of ${Language} with the LTeX extension",
   "icon": "img/LTeX-${short code}-icon.png",

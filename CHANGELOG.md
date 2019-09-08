@@ -1,6 +1,6 @@
 # Changelog
 
-## 4.6.9 (upcoming)
+## 4.6.9
 - Limit to five allowed keywords
 
 ## 4.6.6
