@@ -1,5 +1,8 @@
 # Changelog
 
+## 4.6.9 (upcoming)
+- Limit to five allowed keywords
+
 ## 4.6.6
 - Mention specific language setting in README.md
 
