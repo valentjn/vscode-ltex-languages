@@ -1,6 +1,6 @@
 # Changelog
 
-## 4.6.13 (upcoming)
+## 4.6.13
 - Fix language extension not installable on remote machines
 
 ## 4.6.9
