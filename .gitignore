@@ -1,5 +1,7 @@
 /*.vsix
 
+/.gradle/
+
 /node_modules/
 
 /staging/.gradle/
@@ -10,3 +12,6 @@
 /staging/build.gradle
 /staging/package.json
 /staging/README.md
+
+/test/resources/.gradle/
+/test/resources/build/
