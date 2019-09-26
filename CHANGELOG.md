@@ -1,5 +1,8 @@
 # Changelog
 
+## 4.6.13 (upcoming)
+- Fix language extension not installable on remote machines
+
 ## 4.6.9
 - Limit to five allowed keywords
 
