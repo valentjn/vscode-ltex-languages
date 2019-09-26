@@ -1,6 +1,6 @@
 # ${Language} Support for the LT<sub>E</sub>X Extension
 
-Provides language support for ${Language} in when using the [LT<sub>E</sub>X Extension for Visual Studio Code][ltex-ext]. This enables you to do offline grammar checking of ${Language} in L<sup>A</sup>T<sub>E</sub>X documents in Visual Studio Code.
+Provides language support for ${Language} when using the [LT<sub>E</sub>X Extension for Visual Studio Code][ltex-ext]. This enables you to do offline grammar checking of ${Language} in L<sup>A</sup>T<sub>E</sub>X documents in Visual Studio Code.
 
 ## Usage
 
