@@ -23,7 +23,8 @@
     "grammar",
     "proofread",
     "checker",
-    "${Language}"
+    "${Language}",
+    "multi-root ready"
   ],
   "categories": [
     "Linters",
@@ -36,6 +37,7 @@
       "properties": {
         "ltex.${short code}.dictionary": {
           "type": "array",
+          "scope": "resource",
           "default": [],
           "markdownDescription": "List of additional ${Language} (language short code `${short code}`) words that should not be counted as spelling errors.",
           "description": "List of additional ${Language} (language short code \"${short code}\") words that should not be counted as spelling errors."
