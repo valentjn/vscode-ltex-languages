@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.6.14 (upcoming)
+
+- Clarify README.md
+
 ## 4.6.13
 
 - Fix language extension not installable on remote machines

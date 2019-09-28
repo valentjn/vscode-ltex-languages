@@ -4,17 +4,15 @@ Provides language support for ${Language} when using the [LT<sub>E</sub>X Extens
 
 ## Usage
 
-Set `ltex.language` to **${short code}** to configure the checking language as ${Language}.  You can install as many language support extensions as you like and change between them using this configuration.
-
-## Extension Settings
-
-This extension makes the following values valid for the `ltex.language` setting:
+Set `ltex.language` to one of the following values to configure the checking language as ${Language}.
 
 * ${all variants as markdown}
 
 Use a specific language short code like `en-US` or `de-DE` instead of the generic language short code like `en` or `de` to obtain spelling corrections (in addition to grammar corrections).
 
 User dictionaries can be created via `ltex.<LANGUAGE>.dictionary`, where `<LANGUAGE>` is one of the language short codes listed above.
+
+You can install as many language support extensions as you like and change between them using this configuration.
 
 ## Features
 
