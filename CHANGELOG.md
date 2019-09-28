@@ -2,6 +2,7 @@
 
 ## 4.6.14 (upcoming)
 
+- Save dictionary settings under full language short code (e.g., `en-US` instead of `en`)
 - Clarify README.md
 
 ## 4.6.13

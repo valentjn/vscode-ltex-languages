@@ -25,16 +25,35 @@ class App {
 
   public static String replaceLanguageTemplates(String text, Language language) {
     String allVariantsAsMarkdownList = "";
+    String dictionarySettingsForAllVariants = "";
 
     for (Language languageVariant : getLanguageVariants(language)) {
+      String nameVariant = languageVariant.getName();
       String shortCodeVariant = languageVariant.getShortCodeWithCountryAndVariant();
-      if (!allVariantsAsMarkdownList.isEmpty()) allVariantsAsMarkdownList += "\n";
-      allVariantsAsMarkdownList += "* `" + shortCodeVariant + "`";
+
+      if (!allVariantsAsMarkdownList.isEmpty()) {
+        allVariantsAsMarkdownList += "\n";
+        dictionarySettingsForAllVariants += ",\n";
+      }
+
+      allVariantsAsMarkdownList += "* `" + shortCodeVariant + "` (" + nameVariant + ")";
+      dictionarySettingsForAllVariants +=
+          "        \"ltex." + shortCodeVariant + ".dictionary\": {\n" +
+          "          \"type\": \"array\",\n" +
+          "          \"scope\": \"resource\",\n" +
+          "          \"default\": [],\n" +
+          "          \"markdownDescription\": \"List of additional `" + shortCodeVariant + "` (" +
+              nameVariant + ") words that should not be counted as spelling errors.\",\n" +
+          "          \"description\": \"List of additional \\\"" + shortCodeVariant + "\\\" (" +
+              nameVariant + ") words that should not be counted as spelling errors.\"\n" +
+          "        }";
     }
 
     text = replaceTemplate(text, "Language", language.getName());
     text = replaceTemplate(text, "short code", language.getShortCode());
     text = replaceTemplate(text, "all variants as Markdown list", allVariantsAsMarkdownList);
+    text = replaceTemplate(text, "dictionary settings for all variants",
+        dictionarySettingsForAllVariants);
 
     return text;
   }

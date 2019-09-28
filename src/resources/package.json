@@ -35,13 +35,7 @@
     "configuration": {
       "title": "LTeX",
       "properties": {
-        "ltex.${short code}.dictionary": {
-          "type": "array",
-          "scope": "resource",
-          "default": [],
-          "markdownDescription": "List of additional ${Language} (language short code `${short code}`) words that should not be counted as spelling errors.",
-          "description": "List of additional ${Language} (language short code \"${short code}\") words that should not be counted as spelling errors."
-        }
+${dictionary settings for all variants}
       }
     }
   }
