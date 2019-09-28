@@ -18,13 +18,14 @@ class App {
     }
 
     public static String replaceLanguageTemplates(Language language, String text) {
-        String withName = replaceTemplate("Language", language.getName(), text);
-        String withShortCode = replaceTemplate("short code", language.getShortCode(), withName);
-        return replaceTemplate("all variants as markdown",
+        text = replaceTemplate("Language", language.getName(), text);
+        text = replaceTemplate("short code", language.getShortCode(), text);
+        text = replaceTemplate("all variants as markdown",
                 Stream.concat(Stream.of(language.getShortCode()),
                         getLanguageAndVariants(language).map(l -> l.getShortCodeWithCountryAndVariant())).distinct()
                         .collect(Collectors.joining("\n* ")),
-                withShortCode);
+                text);
+        return text;
     }
 
     public static void writeTemplate(Language language, String templateFileName, String destination)
