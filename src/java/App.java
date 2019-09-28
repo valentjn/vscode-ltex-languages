@@ -1,65 +1,87 @@
 import org.languagetool.Language;
 import org.languagetool.Languages;
 import java.io.*;
-import java.nio.file.*;
 import java.util.regex.*;
 import java.util.stream.*;
+import java.util.ArrayList;
 import java.util.List;
 
 class App {
-  public static String replaceTemplate(String find, String replace, String text) {
-    String regex = Pattern.quote("${" + find + "}");
-    return text.replaceAll(regex, replace);
+  public static String replaceTemplate(String text, String find, String replace) {
+    return text.replaceAll(Pattern.quote("${" + find + "}"), replace);
   }
 
-  public static Stream<Language> getLanguageAndVariants(Language language) {
-    return Languages.get().stream().filter(l -> l.getShortCode() == language.getShortCode());
+  public static List<Language> getLanguageVariants(Language language) {
+    List<Language> languageVariants = new ArrayList<>();
+
+    for (Language languageVariant : Languages.get()) {
+      if (languageVariant.getShortCode().equals(language.getShortCode())) {
+        languageVariants.add(languageVariant);
+      }
+    }
+
+    return languageVariants;
   }
 
-  public static String replaceLanguageTemplates(Language language, String text) {
-    text = replaceTemplate("Language", language.getName(), text);
-    text = replaceTemplate("short code", language.getShortCode(), text);
-    text = replaceTemplate("all variants as markdown",
-        Stream.concat(Stream.of(language.getShortCode()),
-          getLanguageAndVariants(language).map(
-            l -> l.getShortCodeWithCountryAndVariant())).distinct()
-          .collect(Collectors.joining("\n* ")),
-        text);
+  public static String replaceLanguageTemplates(String text, Language language) {
+    String allVariantsAsMarkdownList = "";
+
+    for (Language languageVariant : getLanguageVariants(language)) {
+      String shortCodeVariant = languageVariant.getShortCodeWithCountryAndVariant();
+      if (!allVariantsAsMarkdownList.isEmpty()) allVariantsAsMarkdownList += "\n";
+      allVariantsAsMarkdownList += "* `" + shortCodeVariant + "`";
+    }
+
+    text = replaceTemplate(text, "Language", language.getName());
+    text = replaceTemplate(text, "short code", language.getShortCode());
+    text = replaceTemplate(text, "all variants as Markdown list", allVariantsAsMarkdownList);
+
     return text;
   }
 
   public static void writeTemplate(Language language, String templateFileName, String destination)
       throws IOException {
-    ClassLoader classloader = Thread.currentThread().getContextClassLoader();
-    InputStream in = classloader.getResourceAsStream(templateFileName);
+    ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+    InputStream in = classLoader.getResourceAsStream(templateFileName);
     BufferedReader reader = new BufferedReader(new InputStreamReader(in));
-    Stream<String> lines = reader.lines().map(ln -> replaceLanguageTemplates(language, ln));
-    Files.write(Paths.get(destination), lines.collect(Collectors.toList()));
+    String text = reader.lines().collect(Collectors.joining("\n"));
+    text = replaceLanguageTemplates(text, language);
+    try (PrintWriter writer = new PrintWriter(destination)) { writer.print(text); };
   }
 
   public static Language getUniquelySupportedLanguage() {
-    List<Language> installedLanguages = Languages.get().stream().filter(l -> !l.isVariant())
-        .collect(Collectors.toList());
+    Language language = null;
 
-    if (installedLanguages.size() != 1) {
-      throw new IllegalStateException(
-          "Only one language should be installed, but found " + installedLanguages.size());
+    for (Language curLanguage : Languages.get()) {
+      if (!curLanguage.isVariant()) {
+        if (language == null) {
+          language = curLanguage;
+        } else {
+          throw new IllegalStateException("Multiple installed languages found.");
+        }
+      }
     }
 
-    return installedLanguages.get(0);
+    if (language == null) {
+      throw new IllegalStateException("No installed languages found.");
+    }
+
+    return language;
   }
 
   public static void main(String[] args) throws IOException {
-    // Special case for de-DE-x-simple-language because I had
-    // not realized it extends German.  Redesign should be done
-    // to handle this better.
-    Language language;
-    if (Languages.get().stream().anyMatch(
-        x -> x.getShortCodeWithCountryAndVariant().length() > 7)) {
-      language = Languages.get().stream().filter(
-          x -> x.getShortCodeWithCountryAndVariant().length() > 7).collect(
-            Collectors.toList()).get(0);
-    } else {
+    Language language = null;
+
+    // Special case for de-DE-x-simple-language because I had not realized it extends German.
+    // Redesign should be done to handle this better.
+    for (Language curLanguage : Languages.get()) {
+      if (curLanguage.getShortCodeWithCountryAndVariant().length() > 7) {
+        language = curLanguage;
+        break;
+      }
+    }
+
+    if (language == null) {
       language = getUniquelySupportedLanguage();
     }
 

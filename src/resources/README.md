@@ -6,7 +6,7 @@ Provides language support for ${Language} when using the [LT<sub>E</sub>X Extens
 
 Set `ltex.language` to one of the following values to configure the checking language as ${Language}.
 
-* ${all variants as markdown}
+${all variants as Markdown list}
 
 Use a specific language short code like `en-US` or `de-DE` instead of the generic language short code like `en` or `de` to obtain spelling corrections (in addition to grammar corrections).
 
