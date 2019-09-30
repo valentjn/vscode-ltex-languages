@@ -56,7 +56,7 @@ async function writeVscodeignore(coreFiles, shortCode) {
     const excludeEverything = "*\n" + "*/**\n"
 
     await util.promisify(fs.writeFile)(outputDir + '.vscodeignore',
-        ["*", "*/**", "!README.md", "!LICENSE.txt", "!ACKNOWLEDGMENTS.md", "!package.json", `!img/LTeX-${shortCode}-icon.png`]
+        ["*", "*/**", "!ACKNOWLEDGMENTS.md", "!CHANGELOG.md", "!LICENSE.txt", "!README.md", "!package.json", `!img/LTeX-${shortCode}-icon.png`]
             .concat(filesToInclude.map(s => '!lib/' + s)).join('\n'))
 }
 

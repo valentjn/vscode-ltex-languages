@@ -5,6 +5,7 @@
 - Update to LanguageTool 4.7
 - Save dictionary settings under full language short code (e.g., `en-US` instead of `en`)
 - Clarify README.md
+- Include CHANGELOG.md in package
 
 ## 4.6.13
 
