@@ -44,7 +44,7 @@ class App {
           "          \"default\": [],\n" +
           "          \"markdownDescription\": \"List of additional `" + shortCodeVariant + "` (" +
               nameVariant + ") words that should not be counted as spelling errors.\",\n" +
-          "          \"description\": \"List of additional \\\"" + shortCodeVariant + "\\\" (" +
+          "          \"description\": \"List of additional \\\\\"" + shortCodeVariant + "\\\\\" (" +
               nameVariant + ") words that should not be counted as spelling errors.\"\n" +
           "        }";
     }
