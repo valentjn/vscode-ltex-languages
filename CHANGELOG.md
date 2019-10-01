@@ -1,6 +1,6 @@
 # Changelog
 
-## 4.7.0 (upcoming)
+## 4.7.0
 
 - Update to LanguageTool 4.7
 - Save dictionary settings under full language short code (e.g., `en-US` instead of `en`)
