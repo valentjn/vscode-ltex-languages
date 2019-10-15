@@ -14,9 +14,9 @@ ${all variants as Markdown list}
 
 Use a specific language short code like `en-US` or `de-DE` instead of the generic language short code like `en` or `de` to obtain spelling corrections (in addition to grammar corrections).
 
-User dictionaries can be created via `ltex.<LANGUAGE>.dictionary`, where `<LANGUAGE>` is one of the language short codes listed above.
-
 You can install as many language support extensions as you like and change between them using this configuration.
+
+You can set language-specific settings such as user dictionary or specific rules to enable/disable. The available configuration settings are listed in the description of the [LT<sub>E</sub>X extension][ltex-ext].
 
 ## Features
 

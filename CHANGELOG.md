@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.7.4 (upcoming)
+
+- Add `disabledRules` and `enabledRules` settings
+
 ## 4.7.0
 
 - Update to LanguageTool 4.7

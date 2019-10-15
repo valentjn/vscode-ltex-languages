@@ -46,6 +46,28 @@ class App {
               nameVariant + ") words that should not be counted as spelling errors.\",\n" +
           "          \"description\": \"List of additional \\\\\"" + shortCodeVariant + "\\\\\" (" +
               nameVariant + ") words that should not be counted as spelling errors.\"\n" +
+          "        },\n" +
+          "        \"ltex." + shortCodeVariant + ".disabledRules\": {\n" +
+          "          \"type\": \"array\",\n" +
+          "          \"scope\": \"resource\",\n" +
+          "          \"default\": [],\n" +
+          "          \"markdownDescription\": \"List of `" + shortCodeVariant + "` (" +
+              nameVariant + ") rules that should be disabled " +
+              "(if enabled by default by LanguageTool).\",\n" +
+          "          \"description\": \"List of additional \\\\\"" + shortCodeVariant + "\\\\\" (" +
+              nameVariant + ") rules that should be disabled " +
+              "(if enabled by default by LanguageTool).\"\n" +
+          "        },\n" +
+          "        \"ltex." + shortCodeVariant + ".enabledRules\": {\n" +
+          "          \"type\": \"array\",\n" +
+          "          \"scope\": \"resource\",\n" +
+          "          \"default\": [],\n" +
+          "          \"markdownDescription\": \"List of `" + shortCodeVariant + "` (" +
+              nameVariant + ") rules that should be enabled " +
+              "(if disabled by default by LanguageTool).\",\n" +
+          "          \"description\": \"List of additional \\\\\"" + shortCodeVariant + "\\\\\" (" +
+              nameVariant + ") rules that should be enabled " +
+              "(if disabled by default by LanguageTool).\"\n" +
           "        }";
     }
 
