@@ -4,14 +4,10 @@
 
 /node_modules/
 
-/staging/.gradle/
-/staging/build/
-/staging/img/
-/staging/lib/
-/staging/.vscodeignore
-/staging/build.gradle
-/staging/package.json
-/staging/README.md
+/staging/
+!/staging/ACKNOWLEDGMENT.md
+!/staging/CHANGELOG.md
+!/staging/LICENSE.txt
 
-/test/resources/.gradle/
-/test/resources/build/
+/test/resources/
+!/test/resources/build.gradle
