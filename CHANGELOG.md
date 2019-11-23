@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.7.7 (upcoming)
+
+- Remove preview status from extension
+
 ## 4.7.4
 
 - Add `disabledRules` and `enabledRules` settings

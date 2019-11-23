@@ -2,7 +2,6 @@
   "name": "vscode-ltex-${short code}",
   "displayName": "LTeX - ${Language} support",
   "version": "4.7.4",
-  "preview": true,
   "description": "${Language} support for the LTeX extension (LanguageTool grammar checking)",
   "icon": "img/LTeX-${short code}-icon.png",
   "author": "Julian Valentin",
