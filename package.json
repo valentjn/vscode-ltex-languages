@@ -9,6 +9,10 @@
   },
   "author": "Julian Valentin",
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/valentjn/vscode-ltex-languages.git"
+  },
   "dependencies": {},
   "devDependencies": {
     "chai": "^4.2.0",
