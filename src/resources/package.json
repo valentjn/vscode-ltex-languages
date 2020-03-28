@@ -12,7 +12,7 @@
   },
   "qna": "https://github.com/valentjn/vscode-ltex/issues?q=is%3Aissue+label%3A-question",
   "engines": {
-    "vscode": "^1.37.0"
+    "vscode": "^1.39.0"
   },
   "galleryBanner": {
     "color": "#6565f6",
