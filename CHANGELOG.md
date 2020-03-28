@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.9.0 (upcoming)
+
+- Update to LanguageTool 4.9 (see [LT 4.9 release notes](https://github.com/languagetool-org/languagetool/blob/d6a675b8dbf04c57ab0729e82b655f5fb8205dd9/languagetool-standalone/CHANGES.md#49-2020-03-24))
+
 ## 4.7.7
 
 - Remove preview status from extension
