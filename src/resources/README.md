@@ -20,13 +20,12 @@ You can set language-specific settings such as user dictionary or specific rules
 
 ## Features
 
-See [LT<sub>E</sub>X Extension for Visual Studio Code][ltex-ext].
+[See the Marketplace page of LT<sub>E</sub>X.][ltex-ext]
 
 ## Requirements
 
-* A compatible version of the [LT<sub>E</sub>X Extension for Visual Studio Code][ltex-ext] must be installed.
-  * This package is based on LanguageTool 4.9, so you will need **version 4.9.x** of LT<sub>E</sub>X.
-* Java 8+ is required.
+* [Version 4.9.x of the LT<sub>E</sub>X Extension for Visual Studio Code][ltex-ext] (see section about versioning below)
+* [All other requirements of LT<sub>E</sub>X as listed on its Marketplace place][ltex-ext]
 
 ## Versioning
 
