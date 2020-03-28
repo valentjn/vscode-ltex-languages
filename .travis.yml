@@ -25,6 +25,8 @@ deploy:
     secure: AN82f9QRRME4JKskc9X1z6YBujFFptI5GinBnJniiYwmC/Cu6R45ARTURS87HUsXT5pKjJXCvWuCcwYY2lkMrENUspR714rnJPUdjbgHSJYA2cwHcumSApyNn6/rvRmxQ4k+WP4RDCHIUuNAMw4lvrWQpnjBWWkeZ3kXjt4mY47QvxrTrFvx1obZKr7V0rn9EpGbKJF7u6HOr6JFqFfFild514dtS4DL802DdoGp/AhKsMbUx1b0bjgh0cR4A7DAA0La5ICCkcKoGN+pVSuQpGkjAQ9HnDfhUIa1UVrg/Bx+qrx2JrLZJDtkXG0I731c9e2Fbc94fkpBAOn0ZoFudIAiqzdeK+KlAPb1gN2bYb5OLpHIATy0Sr7MnwcT7oZ2rg5O3Q8jC6YaLQeivSY1fpt3TDV5L6KO5UxdQxxxv3/wbVFooFV2UYoXwLQvJgamfvLl58yMtQ1J4Y+dQfRBgXRwElHhWc2hYEQVK39hPdJbJmYU2n79EbY/68rMx6hZP+aoY7sTARd2dq4lZ3FQsvyOxZo2WRjs1K1cagQVK0VfFM5DGkQZYwGZ4qI9uhfh11FHWWtqo5xPu2Qs7ag7ieMcta0r3WzNNHpHt+6e5UeyOGtcklYuDU9juswSQWSQzEk9i59VjRJrVKbKR5WBlkUsDGHp2nROHO8bkxwdsZI=
   file: vscode-ltex-*.vsix
   file_glob: true
+  # needs to be removed for Travis's dpl v2
+  # see https://blog.travis-ci.com/2019-08-27-deployment-tooling-dpl-v2-preview-release#cleaning-up-the-git-working-directory
   skip_cleanup: true
   on:
     repo: valentjn/vscode-ltex-languages
