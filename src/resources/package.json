@@ -30,7 +30,9 @@
     "Linters",
     "Other"
   ],
-  "extensionKind": "workspace",
+  "extensionKind": [
+    "workspace"
+  ],
   "contributes": {
     "configuration": {
       "title": "LTeX",
