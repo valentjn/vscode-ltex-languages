@@ -17,8 +17,8 @@
 
 - Update to LanguageTool 4.7 (see [LT 4.7 release notes](https://github.com/languagetool-org/languagetool/blob/64f87c18c4d0c13f365d6d85c7aa8c61b7ed2ccf/languagetool-standalone/CHANGES.md#47-2019-09-28))
 - Save dictionary settings under full language short code (e.g., `en-US` instead of `en`)
-- Clarify README.md, package name, and description
-- Include CHANGELOG.md in package
+- Clarify readme, package name, and description
+- Include changelog in package
 
 ## 4.6.13
 
@@ -30,11 +30,11 @@
 
 ## 4.6.6
 
-- Mention specific language setting in README.md
+- Mention specific language setting in readme
 
 ## 4.6.5
 
-- Make README.md and package.json consistent with vscode-ltex
+- Make readme and package.json consistent with vscode-ltex
 
 ## 4.6.3
 
