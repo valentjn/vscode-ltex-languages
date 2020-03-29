@@ -25,7 +25,7 @@ You can set language-specific settings such as user dictionary or specific rules
 ## Requirements
 
 * [Version 4.9.x of the LT<sub>E</sub>X Extension for Visual Studio Code][ltex-ext] (see section about versioning below)
-* [All other requirements of LT<sub>E</sub>X as listed on its Marketplace place][ltex-ext]
+* [All other requirements of LT<sub>E</sub>X as listed on its Marketplace page][ltex-ext]
 
 ## Versioning
 
